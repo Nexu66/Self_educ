@@ -58,8 +58,14 @@ int main()
 	cout << "Minimum is: " << MinValue << endl;
 
 
-
-
+	int MaxValue = arr[0];
+	for (int i = 1; i < SIZE; i++)
+	{
+		if (MaxValue < arr[i]) {
+			MaxValue = arr[i];
+		}
+	}
+	cout << "Maximum is: " << MaxValue << endl;
 
 }
 
